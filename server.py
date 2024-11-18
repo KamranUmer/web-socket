@@ -5,6 +5,8 @@ import websockets
 connected_clients = set()
 
 async def handle_client(websocket):
+# async def handle_client(websocket, path): this one not worked 
+
     # Add new client to the set
     connected_clients.add(websocket)
     print(f"New client connected from ")
